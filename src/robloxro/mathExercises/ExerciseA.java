@@ -23,6 +23,7 @@ public class ExerciseA {
             }
         }
         System.out.println("Number provided is "+inputNumber+"\n");
+        int numberOfCombinations=0;
         boolean found=false;
         for (int xy=10; xy<100;xy++)
             for (int yz=10; yz<100;yz++)
@@ -32,8 +33,9 @@ public class ExerciseA {
                     {
                         System.out.println("xy="+xy+",yz="+yz+",zx="+zx+"\n");
                         found=true;
+                        numberOfCombinations++;
                     }
                 }
-        System.out.println(found?"We found the combination":"There is no combination to match the input number "+inputNumber);
+        System.out.println(found?"We found "+numberOfCombinations+" combinations.":"There is no combination to match the input number "+inputNumber);
     }
 }
