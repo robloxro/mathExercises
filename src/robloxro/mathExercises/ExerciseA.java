@@ -3,8 +3,6 @@ package robloxro.mathExercises;
 Given xy+yz+zx=<given number> find all possible values for the number xyz
 * */
 
-import static java.lang.System.exit;
-import static java.lang.System.in;
 
 public class ExerciseA {
     public static void main(String[] args) {
